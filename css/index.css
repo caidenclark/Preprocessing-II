@@ -359,12 +359,12 @@ img {
 }
 .home .content-pick .destination .btn {
   width: 100%;
+  border-radius: 0.9rem;
+  color: white;
   background: #17A2B8;
-  color: #FFFFFF;
   font-size: 1.6rem;
   padding: 0.8rem 4rem;
   margin-left: 1rem;
-  border-radius: 0.9rem;
   text-decoration-line: none;
 }
 .home .content-pick .destination .btn:hover {

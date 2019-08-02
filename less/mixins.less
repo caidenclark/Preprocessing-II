@@ -8,14 +8,18 @@
     border-bottom: 2px dashed @navigation-border;
 }
 
+.buttonstyle(@width, @radius, @color, @background, @font-size,){
+    width: @width;
+    border-radius: @radius;
+    color: @color;
+    background: @background;
+    font-size: @font-size;
+}
+
 .button(){
-    width: 100%;
-    background: @eastern-blue;
-    color: @white;
-    font-size: 1.6rem;
+    .buttonstyle(100%, .9rem, white, @eastern-blue, 1.6rem);
     padding: .8rem 4rem;
     margin-left: 1rem;
-    border-radius: .9rem;
     text-decoration-line: none;
     &:hover{
         border: 1px solid gray;
