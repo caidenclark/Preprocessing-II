@@ -1,1 +1,35 @@
 // Mixins in here
+.flexbox(){
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.bordered(){
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.buttonstyle(@width, @radius, @color, @background, @font-size,){
+    width: @width;
+    border-radius: @radius;
+    color: @color;
+    background: @background;
+    font-size: @font-size;
+}
+
+.button(){
+    .buttonstyle(100%, .9rem, white, @eastern-blue, 1.6rem);
+    padding: .8rem 4rem;
+    margin-left: 1rem;
+    text-decoration-line: none;
+    &:hover{
+        border: 1px solid gray;
+        background: @white;
+        color: @eastern-blue;
+    }
+}
+
+.navlink(){
+    text-decoration-line: none;
+    color: @shark;
+    font-size: 1.6rem;
+}
